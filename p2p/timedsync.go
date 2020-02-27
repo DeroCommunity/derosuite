@@ -25,8 +25,8 @@ import "time"
 import "github.com/romana/rlog"
 import "github.com/vmihailenco/msgpack"
 
-//import "github.com/deroproject/derosuite/crypto"
-//import "github.com/deroproject/derosuite/globals"
+//import "github.com/DeroCommunity/derosuite/crypto"
+//import "github.com/DeroCommunity/derosuite/globals"
 
 // reads our data, length prefix blocks
 func (connection *Connection) Send_TimedSync(request bool) {

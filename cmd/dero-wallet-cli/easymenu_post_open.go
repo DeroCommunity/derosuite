@@ -26,10 +26,10 @@ import "encoding/hex"
 
 import "github.com/chzyer/readline"
 
-import "github.com/deroproject/derosuite/globals"
-import "github.com/deroproject/derosuite/address"
-import "github.com/deroproject/derosuite/walletapi"
-import "github.com/deroproject/derosuite/transaction"
+import "github.com/DeroCommunity/derosuite/globals"
+import "github.com/DeroCommunity/derosuite/address"
+import "github.com/DeroCommunity/derosuite/walletapi"
+import "github.com/DeroCommunity/derosuite/transaction"
 
 // handle menu if a wallet is currently opened
 func display_easymenu_post_open_command(l *readline.Instance) {

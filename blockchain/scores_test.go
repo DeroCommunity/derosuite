@@ -19,7 +19,7 @@ package blockchain
 import "testing"
 import "math/big"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/crypto"
 
 func Test_Scores_Sorting(t *testing.T) {
 

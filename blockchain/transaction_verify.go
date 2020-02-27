@@ -32,14 +32,14 @@ import "runtime/debug"
 import "github.com/romana/rlog"
 import log "github.com/sirupsen/logrus"
 
-import "github.com/deroproject/derosuite/config"
-import "github.com/deroproject/derosuite/block"
-import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/storage"
-import "github.com/deroproject/derosuite/crypto/ringct"
-import "github.com/deroproject/derosuite/transaction"
+import "github.com/DeroCommunity/derosuite/config"
+import "github.com/DeroCommunity/derosuite/block"
+import "github.com/DeroCommunity/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/storage"
+import "github.com/DeroCommunity/derosuite/crypto/ringct"
+import "github.com/DeroCommunity/derosuite/transaction"
 
-//import "github.com/deroproject/derosuite/emission"
+//import "github.com/DeroCommunity/derosuite/emission"
 
 // caches x of transactions validity
 // it is always atomic

@@ -22,7 +22,7 @@ import "bytes"
 import "sync"
 import "sync/atomic"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/crypto"
 
 // enable debuggin mode within ringct
 // if true debugging mode enabled

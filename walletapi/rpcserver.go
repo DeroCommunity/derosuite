@@ -30,8 +30,8 @@ import "net/http"
 //import "github.com/intel-go/fastjson"
 import "github.com/osamingo/jsonrpc"
 
-import "github.com/deroproject/derosuite/globals"
-import "github.com/deroproject/derosuite/structures"
+import "github.com/DeroCommunity/derosuite/globals"
+import "github.com/DeroCommunity/derosuite/structures"
 
 // all components requiring access to wallet must use , this struct to communicate
 // this structure must be update while mutex

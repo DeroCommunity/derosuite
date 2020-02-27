@@ -19,7 +19,7 @@ package rpcserver
 import "net/http"
 import "encoding/json"
 
-import "github.com/deroproject/derosuite/structures"
+import "github.com/DeroCommunity/derosuite/structures"
 
 // we definitely need to clear up the MESS that has been created by the MONERO project
 // half of their APIs are json rpc and half are http

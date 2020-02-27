@@ -20,11 +20,11 @@ package blockchain
 
 import "testing"
 
-import "github.com/deroproject/derosuite/walletapi"
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/walletapi"
+import "github.com/DeroCommunity/derosuite/crypto"
 
-//import "github.com/deroproject/derosuite/address"
-import "github.com/deroproject/derosuite/transaction"
+//import "github.com/DeroCommunity/derosuite/address"
+import "github.com/DeroCommunity/derosuite/transaction"
 
 // file to test whether the miner tx is created successfully and can be serialized/decoded successfully by the block miner
 

@@ -26,14 +26,14 @@ import "time"
 import "github.com/romana/rlog"
 import "github.com/vmihailenco/msgpack"
 
-//import "github.com/deroproject/derosuite/crypto"
-//import "github.com/deroproject/derosuite/globals"
+//import "github.com/DeroCommunity/derosuite/crypto"
+//import "github.com/DeroCommunity/derosuite/globals"
 
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/crypto"
 
-//import "github.com/deroproject/derosuite/globals"
+//import "github.com/DeroCommunity/derosuite/globals"
 
-//import "github.com/deroproject/derosuite/blockchain"
+//import "github.com/DeroCommunity/derosuite/blockchain"
 
 //  we are sending object request
 // right now we only send block ids

@@ -26,10 +26,10 @@ import "encoding/hex"
 import "encoding/binary"
 import "runtime/pprof"
 
-import "github.com/deroproject/derosuite/globals"
-import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/crypto/ringct"
-import "github.com/deroproject/derosuite/transaction"
+import "github.com/DeroCommunity/derosuite/globals"
+import "github.com/DeroCommunity/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/crypto/ringct"
+import "github.com/DeroCommunity/derosuite/transaction"
 
 func init() {
 	globals.Init_rlog()

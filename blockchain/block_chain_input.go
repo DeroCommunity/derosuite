@@ -19,10 +19,10 @@ package blockchain
 /*
 import log "github.com/sirupsen/logrus"
 
-import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/block"
-import "github.com/deroproject/derosuite/transaction"
-//import "github.com/deroproject/derosuite/blockchain/mempool"
+import "github.com/DeroCommunity/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/block"
+import "github.com/DeroCommunity/derosuite/transaction"
+//import "github.com/DeroCommunity/derosuite/blockchain/mempool"
 
 */
 // DERO blockchain has been designed/developed as a state machine ( single-threaded)

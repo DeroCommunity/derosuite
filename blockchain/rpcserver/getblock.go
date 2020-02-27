@@ -29,10 +29,10 @@ import "encoding/json"
 import "github.com/intel-go/fastjson"
 import "github.com/osamingo/jsonrpc"
 
-import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/structures"
+import "github.com/DeroCommunity/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/structures"
 
-//import "github.com/deroproject/derosuite/blockchain"
+//import "github.com/DeroCommunity/derosuite/blockchain"
 
 type GetBlock_Handler struct{}
 

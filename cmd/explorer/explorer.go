@@ -43,12 +43,12 @@ import "github.com/docopt/docopt-go"
 import log "github.com/sirupsen/logrus"
 import "github.com/ybbus/jsonrpc"
 
-import "github.com/deroproject/derosuite/block"
-import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/globals"
-import "github.com/deroproject/derosuite/transaction"
-import "github.com/deroproject/derosuite/structures"
-import "github.com/deroproject/derosuite/proof"
+import "github.com/DeroCommunity/derosuite/block"
+import "github.com/DeroCommunity/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/globals"
+import "github.com/DeroCommunity/derosuite/transaction"
+import "github.com/DeroCommunity/derosuite/structures"
+import "github.com/DeroCommunity/derosuite/proof"
 
 var command_line string = `dero_explorer
 DERO Atlantis Explorer: A secure, private blockchain with smart-contracts

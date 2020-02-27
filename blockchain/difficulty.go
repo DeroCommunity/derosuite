@@ -21,11 +21,11 @@ import "math/big"
 
 import "github.com/romana/rlog"
 
-import "github.com/deroproject/derosuite/block"
-import "github.com/deroproject/derosuite/config"
-import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/globals"
-import "github.com/deroproject/derosuite/storage"
+import "github.com/DeroCommunity/derosuite/block"
+import "github.com/DeroCommunity/derosuite/config"
+import "github.com/DeroCommunity/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/globals"
+import "github.com/DeroCommunity/derosuite/storage"
 
 var (
 	// bigZero is 0 represented as a big.Int.  It is defined here to avoid

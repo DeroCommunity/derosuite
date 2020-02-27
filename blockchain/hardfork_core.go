@@ -16,10 +16,10 @@
 
 package blockchain
 
-import "github.com/deroproject/derosuite/block"
-import "github.com/deroproject/derosuite/config"
-import "github.com/deroproject/derosuite/storage"
-import "github.com/deroproject/derosuite/globals"
+import "github.com/DeroCommunity/derosuite/block"
+import "github.com/DeroCommunity/derosuite/config"
+import "github.com/DeroCommunity/derosuite/storage"
+import "github.com/DeroCommunity/derosuite/globals"
 
 // the voting for hard fork works as follows
 // block major version remains contant, while block minor version contains the next hard fork number,

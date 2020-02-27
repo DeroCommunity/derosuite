@@ -1,5 +1,5 @@
 ### Welcome to the Dero Project
-[Explorer](https://explorer.dero.io) [Source](https://github.com/deroproject/derosuite) [Twitter](https://twitter.com/DeroProject) [Discord](https://discord.gg/H95TJDp) [Wiki](https://wiki.dero.io) [Github](https://github.com/deroproject/derosuite) [Stats](http://network.dero.io) [WebWallet](https://wallet.dero.io/) 
+[Explorer](https://explorer.dero.io) [Source](https://github.com/DeroCommunity/derosuite) [Twitter](https://twitter.com/DeroProject) [Discord](https://discord.gg/H95TJDp) [Wiki](https://wiki.dero.io) [Github](https://github.com/DeroCommunity/derosuite) [Stats](http://network.dero.io) [WebWallet](https://wallet.dero.io/) 
 
 
 ### Table of Contents
@@ -27,12 +27,12 @@
 1. [Proving DERO Transactions](#proving-dero-transactions) 
 
 #### ABOUT DERO PROJECT
-&nbsp; &nbsp; &nbsp; &nbsp; [DERO](https://github.com/deroproject/derosuite) is decentralized DAG(Directed Acyclic Graph) based blockchain with enhanced reliability, privacy, security, and usability. Consensus algorithm is PoW based on original cryptonight. DERO is industry leading and the first blockchain to have bulletproofs, TLS encrypted Network.  
+&nbsp; &nbsp; &nbsp; &nbsp; [DERO](https://github.com/DeroCommunity/derosuite) is decentralized DAG(Directed Acyclic Graph) based blockchain with enhanced reliability, privacy, security, and usability. Consensus algorithm is PoW based on original cryptonight. DERO is industry leading and the first blockchain to have bulletproofs, TLS encrypted Network.  
 &nbsp; &nbsp; &nbsp; &nbsp; DERO is the first crypto project to combine a Proof of Work blockchain with a DAG block structure and wholly anonymous transactions based on [CryptoNote Protocol](https://github.com/deroproject/documentation/blob/master/CryptoNote-WP.pdf). The fully distributed ledger processes transactions with a twelve-second average block time and is secure against majority hashrate attacks. DERO will be the first CryptoNote blockchain to have smart contracts on its native chain without any extra layers or secondary blockchains. At present DERO have Smart Contracts on [testnet](https://github.com/deroproject/documentation/blob/master/testnet/stargate.md).
 
 #### DERO Crypto
 &nbsp; &nbsp; &nbsp; &nbsp; Secure and fast crypto is the basic necessity of this project and adequate amount of time has been devoted to develop/study/implement/audit it. Most of the crypto such as ring signatures have been studied by various researchers and are in production by number of projects. As far as the Bulletproofs are considered, since DERO is the first one to implement/deploy, they have been given a more detailed look. First, a bare bones bulletproofs was implemented, then implementations in development were studied (Benedict Bunz,XMR, Dalek Bulletproofs) and thus improving our own implementation.  
-&nbsp; &nbsp; &nbsp; &nbsp; Some new improvements were discovered and implemented (There are number of other improvements which are not explained here). Major improvements are in the Double-Base Double-Scalar Multiplication while validating bulletproofs. A typical bulletproof takes ~15-17 ms to verify. Optimised bulletproofs takes ~1 to ~2 ms(simple bulletproof, no aggregate/batching). Since, in the case of bulletproofs the bases are fixed, we can use precompute table to convert 64*2 Base Scalar multiplication into doublings and additions (NOTE: We do not use Bos-Coster/Pippienger methods). This time can be again easily decreased to .5 ms with some more optimizations. With batching and aggregation, 5000 range-proofs (~2500 TX) can be easily verified on even a laptop. The implementation for bulletproofs is in github.com/deroproject/derosuite/crypto/ringct/bulletproof.go , optimized version is in github.com/deroproject/derosuite/crypto/ringct/bulletproof_ultrafast.go
+&nbsp; &nbsp; &nbsp; &nbsp; Some new improvements were discovered and implemented (There are number of other improvements which are not explained here). Major improvements are in the Double-Base Double-Scalar Multiplication while validating bulletproofs. A typical bulletproof takes ~15-17 ms to verify. Optimised bulletproofs takes ~1 to ~2 ms(simple bulletproof, no aggregate/batching). Since, in the case of bulletproofs the bases are fixed, we can use precompute table to convert 64*2 Base Scalar multiplication into doublings and additions (NOTE: We do not use Bos-Coster/Pippienger methods). This time can be again easily decreased to .5 ms with some more optimizations. With batching and aggregation, 5000 range-proofs (~2500 TX) can be easily verified on even a laptop. The implementation for bulletproofs is in github.com/DeroCommunity/derosuite/crypto/ringct/bulletproof.go , optimized version is in github.com/DeroCommunity/derosuite/crypto/ringct/bulletproof_ultrafast.go
 
 &nbsp; &nbsp; &nbsp; &nbsp; There are other optimizations such as base-scalar multiplication could be done in less than a microsecond. Some of these optimizations are not yet deployed and may be deployed at a later stage.  
 
@@ -102,7 +102,7 @@ Wallet RPC Default Port: 30309
 &nbsp; &nbsp; &nbsp; &nbsp; Traditional Blockchains process blocks as single unit of computation(if a double-spend tx occurs within the block, entire block is rejected). However DERO network accepts such blocks since DERO blockchain considers transaction as a single unit of computation.DERO blocks may contain duplicate or double-spend transactions which are filtered by client protocol and ignored by the network. DERO DAG processes transactions atomically one transaction at a time.
 
 ####  DERO Rocket Bulletproofs
- - Dero ultrafast bulletproofs optimization techniques in the form used did not exist anywhere in publicly available cryptography literature at the time of implementation. Please contact for any source/reference to include here if it exists.  Ultrafast optimizations verifies Dero bulletproofs 10 times faster than other/original bulletproof implementations. See: https://github.com/deroproject/derosuite/blob/master/crypto/ringct/bulletproof_ultrafast.go
+ - Dero ultrafast bulletproofs optimization techniques in the form used did not exist anywhere in publicly available cryptography literature at the time of implementation. Please contact for any source/reference to include here if it exists.  Ultrafast optimizations verifies Dero bulletproofs 10 times faster than other/original bulletproof implementations. See: https://github.com/DeroCommunity/derosuite/blob/master/crypto/ringct/bulletproof_ultrafast.go
 
  - DERO rocket bulletproof implementations are hardened, which protects DERO from certain class of attacks.  
 
@@ -120,7 +120,7 @@ Wallet RPC Default Port: 30309
 &nbsp; &nbsp; &nbsp; &nbsp; DERO is written in golang and very easy to install both from source and binary. 
 #### Installation From Source
 1. Install Golang, Golang version 1.12.12 required.  
-1. In go workspace: ```go get -u github.com/deroproject/derosuite/...```  
+1. In go workspace: ```go get -u github.com/DeroCommunity/derosuite/...```  
 1. Check go workspace bin folder for binaries. 
 1. For example on Linux machine following binaries will be created:
     1. derod-linux-amd64 -> DERO daemon.  
@@ -128,15 +128,15 @@ Wallet RPC Default Port: 30309
     1. explorer-linux-amd64 -> DERO Explorer. Yes, DERO has prebuilt personal explorer also for advance privacy users.
 
 #### Installation From Binary
-&nbsp; &nbsp; &nbsp; &nbsp; Download [DERO binaries](https://github.com/deroproject/derosuite/releases) for ARM, INTEL, MAC platform and Windows, Mac, FreeBSD, OpenBSD, Linux etc. operating systems.  
+&nbsp; &nbsp; &nbsp; &nbsp; Download [DERO binaries](https://github.com/DeroCommunity/derosuite/releases) for ARM, INTEL, MAC platform and Windows, Mac, FreeBSD, OpenBSD, Linux etc. operating systems.  
 Most users required following binaries:  
-[Windows 7-10, Server 64bit/amd64 ](https://github.com/deroproject/derosuite/releases/download/v2.1.6-1/dero_windows_amd64_2.1.6-1.alpha.atlantis.07032019.zip)  
-[Windows 32bit/x86/386](https://github.com/deroproject/derosuite/releases/download/v2.1.6-1/dero_windows_x86_2.1.6-1.alpha.atlantis.07032019.zip)  
-[Linux 64bit/amd64](https://github.com/deroproject/derosuite/releases/download/v2.1.6-1/dero_linux_amd64_2.1.6-1.alpha.atlantis.07032019.tar.gz)  
-[Linux 32bit/x86](https://github.com/deroproject/derosuite/releases/download/v2.1.6-1/dero_linux_386_2.1.6-1.alpha.atlantis.07032019.tar.gz)  
-[FreeBSD 64bit/amd64](https://github.com/deroproject/derosuite/releases/download/v2.1.6-1/dero_freebsd_amd64_2.1.6-1.alpha.atlantis.07032019.tar.gz)  
-[OpenBSD 64bit/amd64](https://github.com/deroproject/derosuite/releases/download/v2.1.6-1/dero_openbsd_amd64_2.1.6-1.alpha.atlantis.07032019.tar.gz)  
-[Mac OS](https://github.com/deroproject/derosuite/releases/download/v2.1.6-1/dero_apple_mac_darwin_amd64_2.1.6-1.alpha.atlantis.07032019.tar.gz)  
+[Windows 7-10, Server 64bit/amd64 ](https://github.com/DeroCommunity/derosuite/releases/download/v2.1.6-1/dero_windows_amd64_2.1.6-1.alpha.atlantis.07032019.zip)  
+[Windows 32bit/x86/386](https://github.com/DeroCommunity/derosuite/releases/download/v2.1.6-1/dero_windows_x86_2.1.6-1.alpha.atlantis.07032019.zip)  
+[Linux 64bit/amd64](https://github.com/DeroCommunity/derosuite/releases/download/v2.1.6-1/dero_linux_amd64_2.1.6-1.alpha.atlantis.07032019.tar.gz)  
+[Linux 32bit/x86](https://github.com/DeroCommunity/derosuite/releases/download/v2.1.6-1/dero_linux_386_2.1.6-1.alpha.atlantis.07032019.tar.gz)  
+[FreeBSD 64bit/amd64](https://github.com/DeroCommunity/derosuite/releases/download/v2.1.6-1/dero_freebsd_amd64_2.1.6-1.alpha.atlantis.07032019.tar.gz)  
+[OpenBSD 64bit/amd64](https://github.com/DeroCommunity/derosuite/releases/download/v2.1.6-1/dero_openbsd_amd64_2.1.6-1.alpha.atlantis.07032019.tar.gz)  
+[Mac OS](https://github.com/DeroCommunity/derosuite/releases/download/v2.1.6-1/dero_apple_mac_darwin_amd64_2.1.6-1.alpha.atlantis.07032019.tar.gz)  
 Contact for support of other hardware and OS.  
 
 #### Next Step After DERO Installation  

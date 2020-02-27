@@ -18,8 +18,8 @@ import bolt "github.com/coreos/bbolt"
 import "github.com/blang/semver"
 import "golang.org/x/crypto/pbkdf2" // // used to encrypt master password ( so user can change his password anytime)
 
-import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/walletapi/mnemonics"
+import "github.com/DeroCommunity/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/walletapi/mnemonics"
 
 const FUNDS_BUCKET = "FUNDS"                   // stores all incoming funds, key is global output index encrypted form
 const FUNDS_AVAILABLE = "FUNDS_AVAILABLE"      // indices of all funds ready to spend

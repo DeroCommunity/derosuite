@@ -36,18 +36,18 @@ import "github.com/chzyer/readline"
 import "github.com/docopt/docopt-go"
 import log "github.com/sirupsen/logrus"
 
-import "github.com/deroproject/derosuite/address"
-import "github.com/deroproject/derosuite/p2pv2"
+import "github.com/DeroCommunity/derosuite/address"
+import "github.com/DeroCommunity/derosuite/p2pv2"
 
 
-import "github.com/deroproject/derosuite/config"
+import "github.com/DeroCommunity/derosuite/config"
 
-import "github.com/deroproject/derosuite/transaction"
+import "github.com/DeroCommunity/derosuite/transaction"
 
-//import "github.com/deroproject/derosuite/checkpoints"
-import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/crypto/ringct"
-import "github.com/deroproject/derosuite/blockchain/rpcserver"
+//import "github.com/DeroCommunity/derosuite/checkpoints"
+import "github.com/DeroCommunity/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/crypto/ringct"
+import "github.com/DeroCommunity/derosuite/blockchain/rpcserver"
 */
 
 //import "fmt"
@@ -57,7 +57,7 @@ import "math/rand"
 import "github.com/beevik/ntp"
 import "github.com/romana/rlog"
 
-import "github.com/deroproject/derosuite/globals"
+import "github.com/DeroCommunity/derosuite/globals"
 
 // these servers automatically rotate every hour as per documentation
 // we also rotate them randomly

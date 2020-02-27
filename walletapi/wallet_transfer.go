@@ -27,14 +27,14 @@ import "encoding/json"
 import "github.com/romana/rlog"
 import "github.com/vmihailenco/msgpack"
 
-import "github.com/deroproject/derosuite/config"
-import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/crypto/ringct"
-import "github.com/deroproject/derosuite/transaction"
-import "github.com/deroproject/derosuite/globals"
-import "github.com/deroproject/derosuite/address"
-import "github.com/deroproject/derosuite/structures"
-import "github.com/deroproject/derosuite/blockchain/inputmaturity"
+import "github.com/DeroCommunity/derosuite/config"
+import "github.com/DeroCommunity/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/crypto/ringct"
+import "github.com/DeroCommunity/derosuite/transaction"
+import "github.com/DeroCommunity/derosuite/globals"
+import "github.com/DeroCommunity/derosuite/address"
+import "github.com/DeroCommunity/derosuite/structures"
+import "github.com/DeroCommunity/derosuite/blockchain/inputmaturity"
 
 
 

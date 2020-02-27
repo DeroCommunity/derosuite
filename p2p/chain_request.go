@@ -27,10 +27,10 @@ import "time"
 import "github.com/romana/rlog"
 import "github.com/vmihailenco/msgpack"
 
-//import "github.com/deroproject/derosuite/crypto"
-import "github.com/deroproject/derosuite/globals"
+//import "github.com/DeroCommunity/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/globals"
 
-//import "github.com/deroproject/derosuite/blockchain"
+//import "github.com/DeroCommunity/derosuite/blockchain"
 
 //  we are sending a chain request, build a packet with our chain data
 // so as other side can respond with chain response

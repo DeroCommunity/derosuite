@@ -29,9 +29,9 @@ import "encoding/json"
 import "github.com/romana/rlog"
 import log "github.com/sirupsen/logrus"
 
-import "github.com/deroproject/derosuite/transaction"
-import "github.com/deroproject/derosuite/globals"
-import "github.com/deroproject/derosuite/crypto"
+import "github.com/DeroCommunity/derosuite/transaction"
+import "github.com/DeroCommunity/derosuite/globals"
+import "github.com/DeroCommunity/derosuite/crypto"
 
 // this is only used for sorting and nothing else
 type TX_Sorting_struct struct {

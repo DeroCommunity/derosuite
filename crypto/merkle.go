@@ -25,10 +25,10 @@ import "math"
 
 //import log "github.com/sirupsen/logrus"
 
-//import "github.com/deroproject/derosuite/block"
-//import "github.com/deroproject/derosuite/crypto"
-//import "github.com/deroproject/derosuite/globals"
-//import "github.com/deroproject/derosuite/transaction"
+//import "github.com/DeroCommunity/derosuite/block"
+//import "github.com/DeroCommunity/derosuite/crypto"
+//import "github.com/DeroCommunity/derosuite/globals"
+//import "github.com/DeroCommunity/derosuite/transaction"
 
 /* this file implements the  merkle tree hash
  * this is used to build a a hash of sorted Tips

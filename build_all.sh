@@ -10,14 +10,14 @@ ABSDIR=$(dirname $ABSPATH)
 cd $ABSDIR/../../../../
 GOPATH=`pwd`
 
-version=`cat src/github.com/deroproject/derosuite/config/version.go  | grep -i version |cut -d\" -f 2`
+version=`cat src/github.com/DeroCommunity/derosuite/config/version.go  | grep -i version |cut -d\" -f 2`
 
 
 cd $CURDIR
-bash $ABSDIR/build_package.sh "github.com/deroproject/derosuite/cmd/derod"
-bash $ABSDIR/build_package.sh "github.com/deroproject/derosuite/cmd/explorer"
-bash $ABSDIR/build_package.sh "github.com/deroproject/derosuite/cmd/dero-wallet-cli"
-bash $ABSDIR/build_package.sh "github.com/deroproject/derosuite/cmd/dero-miner"
+bash $ABSDIR/build_package.sh "github.com/DeroCommunity/derosuite/cmd/derod"
+bash $ABSDIR/build_package.sh "github.com/DeroCommunity/derosuite/cmd/explorer"
+bash $ABSDIR/build_package.sh "github.com/DeroCommunity/derosuite/cmd/dero-wallet-cli"
+bash $ABSDIR/build_package.sh "github.com/DeroCommunity/derosuite/cmd/dero-miner"
 
 for d in build/*; do cp Start.md "$d"; done
 cd "${ABSDIR}/build"
